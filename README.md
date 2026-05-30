@@ -1,24 +1,38 @@
 # Skills
 
-Colección de skills personales para usar con Claude Code, Claude Cowork y Claude Code Scheduled. Cada carpeta de este repo es una skill independiente con su archivo `SKILL.md` y, cuando hace falta, los archivos auxiliares que necesita para funcionar.
+Colección de skills para usar con Claude Code, Claude Cowork y Claude Code Scheduled. Cada carpeta de este repo es una skill independiente con su archivo `SKILL.md` y, cuando hace falta, los archivos auxiliares que necesita para funcionar.
 
 La idea de centralizarlas aquí en vez de copiarlas en cada conversación o en cada rutina automatizada es práctica: cuando una skill mejora, la cambias en un solo sitio y todos los entornos que la consumen heredan la mejora automáticamente, sin tener que tocar prompts uno por uno.
 
+## Autoría de las skills (importante para futuras sesiones)
+
+Este repo mezcla skills creadas por mí (Edwar Hernández) con skills recopiladas de la comunidad o de terceros que guardo aquí solo para tenerlas centralizadas. Para que cualquier sesión futura lo tenga claro:
+
+- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`.
+- **Externas (recopiladas de terceros, no son de mi autoría):** `entrevistador-procesos`, `humanizador`, `kit-cerebro-operativo`, `notebooklm-skill`, `optimizador-prompts`, `presentaciones-visuales`, `superpowers`, `verificador-datos`.
+
+Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, considerar como propias únicamente las marcadas como **Propia** en la tabla. Las externas pueden usarse y adaptarse, pero no atribuírmelas.
+
 ## Las skills disponibles
 
-| Skill | Para qué sirve | Dónde se usa mejor |
-|-------|----------------|---------------------|
-| [director-creativo](director-creativo/) | Acompaña al usuario en proyectos visuales (webs, presentaciones, pósters, dashboards, branding) con un proceso de briefing, propuesta visual y, solo tras aprobación, implementación. | claude.ai, Cowork |
-| [entrevistador-procesos](entrevistador-procesos/) | Entrevista al usuario para definir un proceso, workflow o skill antes de construirlo. Una pregunta a la vez, sin saltarse fases. | claude.ai, Cowork |
-| [humanizador](humanizador/) | Reescribe textos para que suenen naturales y humanos, quitando frases típicas de IA, tono inflado y lenguaje corporativo vacío. | claude.ai, Cowork |
-| [kit-cerebro-operativo](kit-cerebro-operativo/) | Sistema para convertir Cowork en un asistente personal real, con identidad, contexto y memoria propios. | Cowork |
-| [notebooklm-skill](notebooklm-skill/) | Acceso completo a Google NotebookLM desde Claude: crear cuadernos, añadir fuentes, generar podcasts, vídeos, infografías, presentaciones, quizzes, mapas mentales e informes. Incluye también `ResumenCoNoteSkill` para exportar sesiones. | Claude Code (Mac + Windows) |
-| [optimizador-prompts](optimizador-prompts/) | Convierte ideas desordenadas o notas rápidas en prompts limpios y estructurados, adaptados a la herramienta de destino (Claude, ChatGPT, Midjourney, Sora, n8n, etc.). | claude.ai, Cowork |
-| [presentaciones-visuales](presentaciones-visuales/) | Genera presentaciones HTML modernas y autocontenidas a partir de una idea, esquema, transcripción o documento, eligiendo el estilo según el público y el uso previsto. | claude.ai, Cowork |
-| [superpowers](superpowers/) | Activa un modo de trabajo riguroso para proyectos complejos: entender, planificar, detectar riesgos, definir criterios de calidad, y solo entonces construir. | claude.ai, Cowork |
-| [verificador-datos](verificador-datos/) | Revisa cualquier texto buscando afirmaciones falsas, exageradas, dudosas o no verificables, y devuelve un informe con correcciones concretas y una recomendación final. | claude.ai, Cowork, Scheduled |
+| Skill | Autoría | Para qué sirve | Dónde se usa mejor |
+|-------|---------|----------------|---------------------|
+| [director-creativo](director-creativo/) | Propia | Acompaña al usuario en proyectos visuales (webs, presentaciones, pósters, dashboards, branding) con un proceso de briefing, propuesta visual y, solo tras aprobación, implementación. | claude.ai, Cowork |
+| [copywriter-tunal](copywriter-tunal/) | Propia | Copywriter bilingüe (ES/EN) para LinkedIn de Tunal Digital: crea posts, carruseles, anuncios y newsletter con la voz "Encuentra tu luz" y deja el texto limpio de tono IA en el mismo paso. | claude.ai, Cowork |
+| [entrevistador-procesos](entrevistador-procesos/) | Externa | Entrevista al usuario para definir un proceso, workflow o skill antes de construirlo. Una pregunta a la vez, sin saltarse fases. | claude.ai, Cowork |
+| [humanizador](humanizador/) | Externa | Reescribe textos para que suenen naturales y humanos, quitando frases típicas de IA, tono inflado y lenguaje corporativo vacío. | claude.ai, Cowork |
+| [kit-cerebro-operativo](kit-cerebro-operativo/) | Externa | Sistema para convertir Cowork en un asistente personal real, con identidad, contexto y memoria propios. | Cowork |
+| [notebooklm-skill](notebooklm-skill/) | Externa | Acceso completo a Google NotebookLM desde Claude: crear cuadernos, añadir fuentes, generar podcasts, vídeos, infografías, presentaciones, quizzes, mapas mentales e informes. Incluye también `ResumenCoNoteSkill` para exportar sesiones. | Claude Code (Mac + Windows) |
+| [optimizador-prompts](optimizador-prompts/) | Externa | Convierte ideas desordenadas o notas rápidas en prompts limpios y estructurados, adaptados a la herramienta de destino (Claude, ChatGPT, Midjourney, Sora, n8n, etc.). | claude.ai, Cowork |
+| [presentaciones-visuales](presentaciones-visuales/) | Externa | Genera presentaciones HTML modernas y autocontenidas a partir de una idea, esquema, transcripción o documento, eligiendo el estilo según el público y el uso previsto. | claude.ai, Cowork |
+| [superpowers](superpowers/) | Externa | Activa un modo de trabajo riguroso para proyectos complejos: entender, planificar, detectar riesgos, definir criterios de calidad, y solo entonces construir. | claude.ai, Cowork |
+| [verificador-datos](verificador-datos/) | Externa | Revisa cualquier texto buscando afirmaciones falsas, exageradas, dudosas o no verificables, y devuelve un informe con correcciones concretas y una recomendación final. | claude.ai, Cowork, Scheduled |
 
 ## Cómo usarlas
+
+### copywriter-tunal
+
+Invócala con `/copywriter-tunal` (o pídele directamente "hazme un post para LinkedIn sobre X"). Genera la pieza en español e inglés con la voz de Tunal Digital y la deja sin tono de IA. Funciona de la mano de `humanizador`, pero no lo necesita: ya incorpora esa limpieza al crear el contenido.
 
 ### NotebookLMSkill
 
