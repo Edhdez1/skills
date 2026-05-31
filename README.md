@@ -8,7 +8,7 @@ La idea de centralizarlas aquí en vez de copiarlas en cada conversación o en c
 
 Este repo mezcla skills creadas por mí (Edwar Hernández) con skills recopiladas de la comunidad o de terceros que guardo aquí solo para tenerlas centralizadas. Para que cualquier sesión futura lo tenga claro:
 
-- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`.
+- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`, `maestro-de-ceremonia`.
 - **Externas (recopiladas de terceros, no son de mi autoría):** `entrevistador-procesos`, `humanizador`, `kit-cerebro-operativo`, `notebooklm-skill`, `optimizador-prompts`, `presentaciones-visuales`, `superpowers`, `verificador-datos`.
 
 Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, considerar como propias únicamente las marcadas como **Propia** en la tabla. Las externas pueden usarse y adaptarse, pero no atribuírmelas.
@@ -22,6 +22,7 @@ Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, consi
 | [entrevistador-procesos](entrevistador-procesos/) | Externa | Entrevista al usuario para definir un proceso, workflow o skill antes de construirlo. Una pregunta a la vez, sin saltarse fases. | claude.ai, Cowork |
 | [humanizador](humanizador/) | Externa | Reescribe textos para que suenen naturales y humanos, quitando frases típicas de IA, tono inflado y lenguaje corporativo vacío. | claude.ai, Cowork |
 | [kit-cerebro-operativo](kit-cerebro-operativo/) | Externa | Sistema para convertir Cowork en un asistente personal real, con identidad, contexto y memoria propios. | Cowork |
+| [maestro-de-ceremonia](maestro-de-ceremonia/) | Propia | Orquesta tus proyectos: hace triage corto, mapea necesidades a skills/conectores/herramientas, devuelve un plan ordenado y, si falta una pieza, propone crear una skill nueva derivando a `entrevistador-procesos` y `optimizador-prompts`. | claude.ai, Cowork |
 | [notebooklm-skill](notebooklm-skill/) | Externa | Acceso completo a Google NotebookLM desde Claude: crear cuadernos, añadir fuentes, generar podcasts, vídeos, infografías, presentaciones, quizzes, mapas mentales e informes. Incluye también `ResumenCoNoteSkill` para exportar sesiones. | Claude Code (Mac + Windows) |
 | [optimizador-prompts](optimizador-prompts/) | Externa | Convierte ideas desordenadas o notas rápidas en prompts limpios y estructurados, adaptados a la herramienta de destino (Claude, ChatGPT, Midjourney, Sora, n8n, etc.). | claude.ai, Cowork |
 | [presentaciones-visuales](presentaciones-visuales/) | Externa | Genera presentaciones HTML modernas y autocontenidas a partir de una idea, esquema, transcripción o documento, eligiendo el estilo según el público y el uso previsto. | claude.ai, Cowork |
