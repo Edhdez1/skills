@@ -8,7 +8,7 @@ La idea de centralizarlas aquí en vez de copiarlas en cada conversación o en c
 
 Este repo mezcla skills creadas por mí (Edwar Hernández) con skills recopiladas de la comunidad o de terceros que guardo aquí solo para tenerlas centralizadas. Para que cualquier sesión futura lo tenga claro:
 
-- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`, `maestro-de-ceremonia`, `monitoreo-competencia`, `reporte-pipeline`.
+- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`, `maestro-de-ceremonia`, `monitoreo-competencia`, `reporte-pipeline`, `sintesis-estrategica`.
 - **Externas (recopiladas de terceros, no son de mi autoría):** `entrevistador-procesos`, `humanizador`, `kit-cerebro-operativo`, `notebooklm-skill`, `optimizador-prompts`, `presentaciones-visuales`, `superpowers`, `verificador-datos`.
 
 Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, considerar como propias únicamente las marcadas como **Propia** en la tabla. Las externas pueden usarse y adaptarse, pero no atribuírmelas.
@@ -23,11 +23,12 @@ Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, consi
 | [humanizador](humanizador/) | Externa | Reescribe textos para que suenen naturales y humanos, quitando frases típicas de IA, tono inflado y lenguaje corporativo vacío. | claude.ai, Cowork |
 | [kit-cerebro-operativo](kit-cerebro-operativo/) | Externa | Sistema para convertir Cowork en un asistente personal real, con identidad, contexto y memoria propios. | Cowork |
 | [maestro-de-ceremonia](maestro-de-ceremonia/) | Propia | Orquesta tus proyectos: hace triage corto, mapea necesidades a skills/conectores/herramientas, devuelve un plan ordenado y, si falta una pieza, propone crear una skill nueva derivando a `entrevistador-procesos` y `optimizador-prompts`. | claude.ai, Cowork |
-| [monitoreo-competencia](monitoreo-competencia/) | Propia | Visita los sitios de agencias competidoras del DMV y produce un brief semanal de inteligencia competitiva de 1 página: cambios de precios, casos nuevos, herramientas, ofertas y mensaje, con reglas anti-invención y comparación contra la semana anterior. | Claude Code Scheduled, Claude Code |
+| [monitoreo-competencia](monitoreo-competencia/) | Propia | Visita los sitios de agencias competidoras (3 directas + DMV) y produce un brief semanal de inteligencia competitiva de 1 página: cambios de precios, casos nuevos, herramientas, ofertas y mensaje, con reglas anti-invención y comparación contra la semana anterior. | Claude Code Scheduled, Claude Code |
 | [notebooklm-skill](notebooklm-skill/) | Externa | Acceso completo a Google NotebookLM desde Claude: crear cuadernos, añadir fuentes, generar podcasts, vídeos, infografías, presentaciones, quizzes, mapas mentales e informes. Incluye también `ResumenCoNoteSkill` para exportar sesiones. | Claude Code (Mac + Windows) |
 | [optimizador-prompts](optimizador-prompts/) | Externa | Convierte ideas desordenadas o notas rápidas en prompts limpios y estructurados, adaptados a la herramienta de destino (Claude, ChatGPT, Midjourney, Sora, n8n, etc.). | claude.ai, Cowork |
 | [presentaciones-visuales](presentaciones-visuales/) | Externa | Genera presentaciones HTML modernas y autocontenidas a partir de una idea, esquema, transcripción o documento, eligiendo el estilo según el público y el uso previsto. | claude.ai, Cowork |
 | [reporte-pipeline](reporte-pipeline/) | Propia | Genera el reporte semanal de pipeline de Tunal Digital (leads nuevos, positivas pendientes, calls, reply rate por sector) con umbrales de alerta y un modo pre-pipeline que evita inventar métricas cuando aún no hay campañas. | Claude Code Scheduled, Claude Code |
+| [sintesis-estrategica](sintesis-estrategica/) | Propia | Consejo mensual: cruza TODOS los informes del mes en inteligencia/ contra el marco de negocio y entrega 1 página con logros, riesgos, 3–5 propuestas priorizadas por impacto/esfuerzo y qué dejar de hacer. Propone, nunca ejecuta. | Claude Code Scheduled, Claude Code |
 | [superpowers](superpowers/) | Externa | Activa un modo de trabajo riguroso para proyectos complejos: entender, planificar, detectar riesgos, definir criterios de calidad, y solo entonces construir. | claude.ai, Cowork |
 | [verificador-datos](verificador-datos/) | Externa | Revisa cualquier texto buscando afirmaciones falsas, exageradas, dudosas o no verificables, y devuelve un informe con correcciones concretas y una recomendación final. | claude.ai, Cowork, Scheduled |
 
@@ -37,9 +38,9 @@ Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, consi
 
 Invócala con `/copywriter-tunal` (o pídele directamente "hazme un post para LinkedIn sobre X"). Genera la pieza en español e inglés con la voz de Tunal Digital y la deja sin tono de IA. Funciona de la mano de `humanizador`, pero no lo necesita: ya incorpora esa limpieza al crear el contenido.
 
-### monitoreo-competencia y reporte-pipeline
+### monitoreo-competencia, reporte-pipeline y sintesis-estrategica
 
-Nacieron para las rutinas server-side de Claude Code (Scheduled): la rutina semanal lee el `SKILL.md` correspondiente desde el repositorio `tunal-digital` (carpeta `.claude/skills/`) y lo sigue al pie de la letra. La copia maestra vive aquí; la copia que consumen las rutinas vive en `tunal-digital/.claude/skills/`. Si mejoras una, replica el cambio en la otra (o pide a Claude que lo haga). También puedes usarlas manualmente en una conversación: pídele a Claude que lea el `SKILL.md` y lo aplique.
+Nacieron para las rutinas server-side de Claude Code (Scheduled): cada rutina lee el `SKILL.md` correspondiente desde el repositorio `tunal-digital` (carpeta `.claude/skills/`) y lo sigue al pie de la letra. La copia maestra vive aquí; la copia que consumen las rutinas vive en `tunal-digital/.claude/skills/`. Si mejoras una, replica el cambio en la otra (o pide a Claude que lo haga). El ciclo mensual completo: las semanales generan datos (domingos) → el health-check verifica que corrieron (día 1) → `sintesis-estrategica` cruza todo y aconseja (día 2). También puedes usarlas manualmente en una conversación: pídele a Claude que lea el `SKILL.md` y lo aplique.
 
 ### NotebookLMSkill
 
