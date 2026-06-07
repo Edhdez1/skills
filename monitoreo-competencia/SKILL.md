@@ -19,15 +19,20 @@ El lector del brief es Oseloth (dueño de Tunal Digital), que lo lee el lunes po
 
 ## Competidores a visitar
 
-| # | Competidor | URL | Estado de verificación |
-|---|---|---|---|
-| 1 | QA Digital Ads | https://qadigitalads.com | Confirmado DMV (Maryland, bilingüe ES/EN) |
-| 2 | Dupont Creative | https://www.dupontcreative.com | Confirmado DMV (Silver Spring / DC) |
-| 3 | Digital Sprout | https://digitalsprout.com | Confirmado DMV (Silver Spring) |
-| 4 | Nick Marketing | https://nickmarketing.co | Enfoque hispano — ubicación POR CONFIRMAR |
-| 5 | Latino Marketing Agency | https://latinomarketingagency.com | Enfoque hispano — ubicación POR CONFIRMAR |
+Los tres primeros son **competencia DIRECTA** (mercado hispano con modelo de suscripción/membresía — identificados en el análisis de competencia del 7-jun-2026): si el contexto o el tiempo aprietan, priorízalos siempre.
 
-**Primera corrida:** antes de producir el primer brief, valida la lista: confirma que cada competidor realmente atiende al mercado DMV y/o hispano de EE. UU. Si alguno no aplica (por ejemplo, opera solo en otra región), márcalo como descartado en el brief y propón un reemplazo concreto con URL, buscando «agencia web/marketing negocios hispanos DMV/Maryland/Virginia». La lista final debe quedar registrada en el primer brief.
+| # | Competidor | URL | Estado / notas |
+|---|---|---|---|
+| 1 | HacemosSuWeb | https://www.hacemossuweb.com | ⭐ DIRECTO — hispano (Miami, opera online), suscripción $29.99–99.99/mes (línea base 7-jun-2026) |
+| 2 | Latin Branding | https://latinbranding.com | ⭐ DIRECTO — hispano nacional USA (+1000 clientes), todo-en-uno desde ~$69.99/mes (línea base 7-jun-2026; verificar) |
+| 3 | Muchísimo | https://gomuchisimo.com | ⭐ DIRECTO — marketing digital hispano, Washington DC (página /washington-dc/) |
+| 4 | QA Digital Ads | https://qadigitalads.com | Confirmado DMV (Maryland, bilingüe ES/EN) |
+| 5 | Dupont Creative | https://www.dupontcreative.com | Confirmado DMV (Silver Spring / DC) |
+| 6 | Digital Sprout | https://digitalsprout.com | Confirmado DMV (Silver Spring) |
+| 7 | Nick Marketing | https://nickmarketing.co | Enfoque hispano — ubicación POR CONFIRMAR |
+| 8 | Latino Marketing Agency | https://latinomarketingagency.com | Enfoque hispano — ubicación POR CONFIRMAR |
+
+**Primera corrida:** antes de producir el primer brief, valida la lista: confirma que cada competidor realmente atiende al mercado DMV y/o hispano de EE. UU. Si alguno no aplica (por ejemplo, opera solo en otra región), márcalo como descartado en el brief y propón un reemplazo concreto con URL, buscando «agencia web/marketing negocios hispanos DMV/Maryland/Virginia». Registra también los precios actuales de los marcados DIRECTO como línea base. La lista final debe quedar registrada en el primer brief.
 
 ## Qué extraer de cada sitio (solo lo observable)
 
@@ -39,7 +44,7 @@ El lector del brief es Oseloth (dueño de Tunal Digital), que lo lee el lunes po
 
 ## Método de investigación
 
-- Si el entorno tiene disponible `@playwright/cli` (o puede instalarse con un comando), úsalo para visitar las páginas: gasta ~4x menos tokens que otras vías. Si no está disponible, usa la lectura/búsqueda web estándar del entorno.
+- Usa Playwright en modo **headless** (el entorno server-side no tiene pantalla). Si `@playwright/cli` o la librería `playwright` están disponibles en el entorno, úsalas directamente; si no, instálalas con npm en el sandbox, o usa la lectura/búsqueda web estándar como último recurso.
 - Visita como máximo la portada + 2 páginas relevantes por competidor (precios/servicios y portfolio/casos). No rastrees sitios completos.
 - Guarda lo observado con su URL exacta de origen.
 
@@ -52,7 +57,7 @@ Antes de escribir, lee el brief más reciente en la carpeta `inteligencia/` del 
 1. **Nunca inventes datos.** Solo afirma lo que viste en una página, con su URL. Esta regla pesa más que completar todas las secciones del brief.
 2. Si una cifra o afirmación es dudosa o de fuente débil, aplica los principios de la skill `verificador-datos` (este mismo repositorio) y márcala como `[sin verificar]` si no se puede confirmar.
 3. Si un sitio no carga o bloquea el acceso, repórtalo como «no accesible esta semana» — no rellenes con memoria ni suposiciones.
-4. Máximo una página. Si hay más material, prioriza: precios > ofertas > casos nuevos > mensaje.
+4. Máximo una página. Si hay más material, prioriza: DIRECTOS (1-3) > precios > ofertas > casos nuevos > mensaje.
 5. El brief es interno para Tunal Digital. No incluyas juicios sobre personas, solo sobre ofertas y negocios.
 
 ## Formato exacto del brief
