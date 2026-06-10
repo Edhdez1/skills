@@ -45,6 +45,8 @@ Documento **vivo**. Aquí están las reglas que Claude debe tener **siempre** en
 
 18. **Afirmaciones públicas verificables.** Ninguna credencial, sello, cifra o testimonio se publica en materiales de Tunal si no resiste una verificación externa con fuente.
 
+19. **Rutinas solo de madrugada.** Toda rutina programada de Claude (`/rutines`) se agenda entre la **medianoche y las 6:00 a.m. hora del Este**, nunca en horario de trabajo, para que su consumo de uso no compita con las sesiones que Edwar necesita durante el día. Matiz honesto: esto despeja la ventana de uso de corto plazo (cuando Edwar empieza a trabajar, lo que la rutina gastó de madrugada ya no le estorba), pero el límite **semanal** del plan se consume igual a cualquier hora — la madrugada evita el choque del día a día, no regala créditos extra. El catálogo de rutinas vigentes, con horario y prompt exacto, vive en `tunal-digital/RUTINAS.md`.
+
 ---
 
 ## Pendientes / por agregar
