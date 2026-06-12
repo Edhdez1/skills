@@ -8,7 +8,7 @@ La idea de centralizarlas aquí en vez de copiarlas en cada conversación o en c
 
 Este repo mezcla skills creadas por mí (Edwar Hernández) con skills recopiladas de la comunidad o de terceros que guardo aquí solo para tenerlas centralizadas. Para que cualquier sesión futura lo tenga claro:
 
-- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`, `maestro-de-ceremonia`, `monitoreo-competencia`, `reporte-pipeline`, `sintesis-estrategica`.
+- **Propias (creadas por mí):** `director-creativo`, `copywriter-tunal`, `estudio-tunal`, `maestro-de-ceremonia`, `monitoreo-competencia`, `reporte-pipeline`, `sintesis-estrategica`.
 - **Externas (recopiladas de terceros, no son de mi autoría):** `entrevistador-procesos`, `humanizador`, `kit-cerebro-operativo`, `notebooklm-skill`, `optimizador-prompts`, `presentaciones-visuales`, `superpowers`, `verificador-datos`.
 
 Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, considerar como propias únicamente las marcadas como **Propia** en la tabla. Las externas pueden usarse y adaptarse, pero no atribuírmelas.
@@ -19,6 +19,7 @@ Regla para futuras sesiones: al hablar de "mis skills" o evaluar autoría, consi
 |-------|---------|----------------|---------------------|
 | [director-creativo](director-creativo/) | Propia | Acompaña al usuario en proyectos visuales (webs, presentaciones, pósters, dashboards, branding) con un proceso de briefing, propuesta visual y, solo tras aprobación, implementación. | claude.ai, Cowork |
 | [copywriter-tunal](copywriter-tunal/) | Propia | Copywriter bilingüe (ES/EN) para LinkedIn de Tunal Digital: crea posts, carruseles, anuncios y newsletter con la voz "Encuentra tu luz" y deja el texto limpio de tono IA en el mismo paso. | claude.ai, Cowork |
+| [estudio-tunal](estudio-tunal/) | Propia | Generador de contenido de LinkedIn para Tunal Digital: tendencias → post en voz de marca → calificación con el analizador → visual de marca (Playwright headless) → paquete para que Edwar apruebe y publique a mano. Línea editorial: informar, no vender. | Claude Code, Claude Code Scheduled |
 | [entrevistador-procesos](entrevistador-procesos/) | Externa | Entrevista al usuario para definir un proceso, workflow o skill antes de construirlo. Una pregunta a la vez, sin saltarse fases. | claude.ai, Cowork |
 | [humanizador](humanizador/) | Externa | Reescribe textos para que suenen naturales y humanos, quitando frases típicas de IA, tono inflado y lenguaje corporativo vacío. | claude.ai, Cowork |
 | [kit-cerebro-operativo](kit-cerebro-operativo/) | Externa | Sistema para convertir Cowork en un asistente personal real, con identidad, contexto y memoria propios. | Cowork |
