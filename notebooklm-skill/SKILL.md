@@ -1,5 +1,5 @@
 ---
-name: NotebookLMSkill
+name: notebooklm-skill
 description: Acceso completo a Google NotebookLM — crear cuadernos, añadir fuentes, generar podcasts, videos, infografias, presentaciones, quizzes, mapas mentales, informes y mas. Funciona en Claude Code en Mac y Windows. Activar con /NotebookLMSkill, "instala notebooklm", "crea un podcast sobre X", "genera una infografia", "busca en profundidad sobre X", "añade estas fuentes a NotebookLM", "lista mis cuadernos".
 ---
 <!-- notebooklm-py v0.3.4 | Claridad Artificial | Mac + Windows -->
